@@ -474,7 +474,7 @@ namespace sensors {
         humidity
     }
 
-    //% blockId=get_DHT11_value block="DHT11 管脚 %pin_arg|get %dhtResult" blockExternalInputs=true
+    //% blockId=get_DHT11_value block="DHT11 引脚 %pin_arg|获取 %dhtResult" blockExternalInputs=true
     //% pin_arg.fieldEditor="gridpicker" pin_arg.fieldOptions.columns=4
     //% pin_arg.fieldOptions.tooltips="false" pin_arg.fieldOptions.width="300"
     export function get_DHT11_value(pin_arg: DigitalPin, dhtResult: Dht11Result): number {

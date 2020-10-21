@@ -445,30 +445,9 @@ namespace sensors {
         signal_dht11(pin);
         let wait_time = 0;
         // Wait for response header to finish
-        while (pins.digitalReadPin(pin) == 1) {
-            wait_time++;
-            basic.pause(1);
-            if (wait_time > 200) {
-                wait_time = 0;
-                break;
-            }
-        }
-        while (pins.digitalReadPin(pin) == 0) {
-            wait_time++;
-            basic.pause(1);
-            if (wait_time > 200) {
-                wait_time = 0;
-                break;
-            }
-        }
-        while (pins.digitalReadPin(pin) == 1) {
-            wait_time++;
-            basic.pause(1);
-            if (wait_time > 200) {
-                wait_time = 0;
-                break;
-            }
-        }
+        while (pins.digitalReadPin(pin) == 1);
+        while (pins.digitalReadPin(pin) == 0);
+        while (pins.digitalReadPin(pin) == 1);
 
         let value = 0;
         let counter = 0;

@@ -1,19 +1,20 @@
 {
     "name": "sensors",
-    "version": "0.0.0",
-    "description": "microbit sensors by XMU",
+    "version": "1.0.0",
+    "description": "PH2.0传感器",
+    "license": "MIT",
     "dependencies": {
         "core": "*",
-        "radio": "*"
+        "radio": "*",
+        "neopixel": "github:microsoft/pxt-neopixel#v0.7.3"
     },
     "files": [
         "README.md",
-        "main.ts"
+        "main.ts",
+        "EMRGBLight.ts",
+		"_locales/zh/sensors-strings.json"
     ],
-    "testFiles": [
-        "test.ts"
-    ],
-    "public": false,
-    "license": "MIT",
+    "public": true,
     "preferredEditor": "tsprj"
+
 }
